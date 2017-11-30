@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    border: 2px solid blue;
+    max-width: 800px;
+    margin: 0 auto 100px;
+    box-sizing: border-box;
+}
+
+.max-th{
+    position: relative;
+}
+    .label,.end-label{
+        position: absolute;
+    }
+    .label{
+        top: 0;
+        left: 0;
+    }
+    .end-label{
+        bottom: 0;
+        right: 0;
+    }
+
+@media screen and (min-width: 600px){
+    .container{}
+        .container-nav{
+            float: left;
+            width: 20%;
+        }
+        .container-p{
+            margin-left: 20%;
+        }
+}
+
+@media screen and (max-width: 600px){
+    .container{}
+        .container-ul li{
+            display: inline-block;
+        }
+}
+
+.inl{
+}
+    .inl-left{
+        background-color: red;
+        width: 25%;
+        height: 100px;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+    .inl-right{
+        background-color: green;
+        width: 75%;
+        height: 200px;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+
+.flo{}
+    .flo-left{
+        background-color: red;
+        width: 25%;
+        height: 100px;
+        float: left;
+        box-sizing: border-box;
+    }
+    .flo-right{
+        float: left;
+        background-color: green;
+        width: 75%;
+        height: 200px;
+        box-sizing: border-box;
+    }
+
+.flo:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.two-column{
+    padding: 10px;
+    column-count: 2;
+    column-gap: 10px;
+}
+
+.container-flex{
+    border: 2px solid blue;
+    max-width: 800px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+}
+    .container-nav-flex{
+        width: 200px;
+    }
+    .container-div-flex{
+        flex: 1;
+    }

@@ -1,0 +1,101 @@
+.grid-container {
+  max-width: 600px;
+  margin: 100px auto 100px;
+  display: grid;
+  grid-template-columns: [line1] 2fr [line2] 1fr [line3] 1fr [line4] 1fr [end];
+  grid-template-rows: [row1] 100px [row2] 100px [row3] 100px [row-end];
+}
+  .bc-red {
+    background-color: red;
+  }
+
+.grid-gap{
+  grid-gap: 10px;
+}
+
+.track{
+  background-color: green;
+  grid-column: line1 / end;
+}
+
+.cell{
+  background-color: blue;
+  grid-column: line1 / line2;
+  grid-row: row2 / row3;
+}
+
+.area{
+  background-color: red;
+  grid-column: line2 / end;
+  grid-row: row3 / end;
+}
+
+.flex-font{
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-size: 32px;
+  justify-content: center;
+}
+
+.grid-area{
+  grid-template-areas: "header header header header"
+                       "main main . sidebar"
+                       "footer footer footer footer";
+}
+
+  .header{
+    background-color: yellowgreen;
+    grid-area: header;
+    align-self: center
+  }
+
+  .main{
+    background-color: blue;
+    grid-area: main;
+    align-self: end;
+  }
+
+  .sidebar{
+    background-color: red;
+    grid-area: sidebar;
+    align-self: start;
+  }
+
+  .footer{
+    background-color: green;
+    grid-area: footer;
+    align-self: stretch;
+  }
+
+.font-large{
+  width: 200px;
+  font-size: 30px;
+  word-break: break-all;
+}
+
+.container{
+  border: 2px solid blue;
+  max-width: 600px;
+  height: 400px;
+  margin: 100px auto 100px;
+}
+
+.rel{
+  position: relative;
+}
+
+.abs{
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+
+.bcr{
+  background-color: red;
+}
+
+.box{
+  height: 50px;
+  width: 50px;
+}
