@@ -1,3 +1,8 @@
 .DS_Store
 */.DS_Store
 */*/.DS_Store
+taco.chen/node_modules
+taco.chen/package-lock.json
+taco.chen/package.json
+taco.chen/public/css/.sass-cache
+taco.chen/public/css/*.css.map
